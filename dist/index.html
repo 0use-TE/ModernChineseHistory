@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f5f3ed"><meta name="description" content="面向2027考研政治的中国近现代史交互时间轴：重要事件、历史意义、易错辨析和判断自测。"><title>史纲 · 时序 | 2027考研政治复习</title><link rel="icon" type="image/png" href="assets/history-logo.png"><link rel="apple-touch-icon" href="assets/history-logo.png"><link rel="stylesheet" href="style.css"><script src="data.js" defer></script><script src="app.js" defer></script></head>
+<body>
+<aside class="sidebar">
+  <a class="brand" href="#"><img class="brand-logo" src="assets/history-logo.png" width="44" height="44" alt=""><span>史纲 · 时序</span></a>
+  <p class="edition">2027 考研政治</p>
+  <nav id="eraNav" aria-label="历史阶段"></nav>
+  <div class="sidebar-bottom"><div class="progress-label"><span>已掌握 <b id="learnCount">0</b> / <span id="totalCount">0</span></span><span id="learnPercent">0%</span></div><div class="progress-track"><div id="progressBar"></div></div></div>
+</aside>
+<main>
+  <header class="topbar"><h1>中国近现代史</h1><div><button id="sourcesButton" class="quiet-button">资料说明</button><button id="printButton" class="quiet-button">打印</button></div></header>
+  <section class="workspace">
+    <div class="view-row"><div class="tabs" role="tablist" aria-label="复习方式"><button role="tab" aria-selected="true" data-view="outline" class="tab active">大纲</button><button role="tab" aria-selected="false" data-view="timeline" class="tab">时间轴</button><button role="tab" aria-selected="false" data-view="traps" class="tab">易错辨析</button><button role="tab" aria-selected="false" data-view="quiz" class="tab">自测</button></div><label class="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="6.5"/><path d="m15 15 5 5"/></svg><input type="search" id="searchInput" placeholder="搜索事件或年份" aria-label="搜索事件或年份"></label></div>
+    <div class="filter-row"><div class="filters"><button id="filterAll" class="filter active">全部</button><button id="filterKey" class="filter">核心</button><button id="filterSaved" class="filter">待复习</button><button id="filterUnlearned" class="filter">未掌握</button></div><label class="trap-toggle"><input type="checkbox" id="showTraps" checked><span></span> 易错提醒</label></div>
+    <div class="section-heading"><h2 id="sectionTitle">全部阶段</h2><span id="resultCount" aria-live="polite"></span></div>
+    <div id="content"></div>
+  </section>
+</main>
+<dialog id="sourceDialog"><div class="dialog-heading"><h2>资料说明</h2><button id="closeSources" aria-label="关闭资料说明">×</button></div><div class="dialog-content"><p class="source-notice">本页面向2027考研政治备考。已核实2027版《思想政治理论考试大纲》书目信息，但未获得完整大纲逐条核验，因此不能承诺覆盖全部2027新增、删改考点。时间轴依据公开权威历史资料整理，按通行史纲脉络组织；2024、2025年节点作为时政联系拓展。请结合正式大纲和所用教材复核。</p><div id="sourceList"></div><p class="fineprint">“易错说法”是刻意编写的错误命题，请以“正确辨析”为准。自测题由上述辨析改编，并非历年真题或押题。“核心”是编辑性的复习建议，没有命题频次含义。已掌握和待复习标记只保存在当前浏览器；无法使用本地存储时，本次会话仍可使用。资料核验：2026年11月11日。</p></div></dialog>
+<div id="toast" role="status"></div>
+</body></html>
